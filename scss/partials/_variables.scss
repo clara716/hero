@@ -1,0 +1,52 @@
+//google fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+
+//font family
+
+$heading-font: 'Roboto Slab', serif;
+$body-font: 'Rubik', sans-serif;
+
+//font weight
+
+$font-weight-bold: 600;
+$font-weight-regular:400;
+$font-weight-thin:300;
+
+//font size
+
+$small: 1.1rem;
+$medium: 1.4rem;
+$large: 1.7rem;
+
+//color
+
+$theme-color-1: (
+    'light':#dcdcdc,
+    'medium':#bdbdbd,
+    'dark':#444444,
+    'primary':#0271B9,
+    'secondary':#B7E0F7,
+    'accent':#002856,
+);
+
+$theme-color-2: (
+    'light':#CFDD77,
+    'medium':#A6C207,
+    'dark':darken(#52700F, 10%),
+    'primary':#C8A2CF,
+    'secondary':#FBD9BA,
+    'accent':#683A8B,
+);
+
+$theme-color-3: (
+    'light':lighten(#FCE67C, 10%),
+    'medium':#FED201,
+    'dark':darken(#E6480A, 15%),
+    'primary':#E7B53D,
+    'secondary':lighten(#EE7601, 25%),
+    'accent':darken(#C50E0E, 10%),
+);
+
+$theme:$theme-color-3; //change this!!

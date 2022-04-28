@@ -1,0 +1,24 @@
+@mixin change-theme($bg-color, $color){
+    color:$color;
+    background-color: $bg-color;
+}
+
+body{
+    @include change-theme(map-get($theme,'light'),map-get($theme,'accent'));
+}
+
+h1,h2,h3{
+    @include change-theme(null,map-get($map: $theme, $key: 'dark'));
+}
+
+nav a{
+    @include change-theme(map-get($theme,'medium'),map-get($theme, 'dark'));
+    &:hover{
+        @include change-theme(map-get($theme, 'dark'),map-get($theme,'medium') );
+        transition: 0.4s;
+    }
+}
+
+footer{
+    @include change-theme(map-get($theme,'secondary'), map-get($theme,'accent'));
+}
